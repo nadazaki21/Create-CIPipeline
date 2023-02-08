@@ -8,7 +8,7 @@ jobs:
   build:
    
     docker:
-      - image: cimg/base:stable
+      - image: circleci/node:13.8.0
    
     steps:
       - checkout
@@ -19,7 +19,7 @@ jobs:
   test:
    
     docker:
-      - image: cimg/base:stable
+      - image: circleci/node:13.8.0
    
     steps:
       - checkout
@@ -30,7 +30,7 @@ jobs:
   analyze :
    
     docker:
-      - image: cimg/base:stable
+      - image: circleci/node:13.8.0
    
     steps:
       - checkout
