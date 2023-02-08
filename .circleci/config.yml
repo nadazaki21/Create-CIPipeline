@@ -37,12 +37,14 @@ jobs:
 
   
 workflows:
-  pipepline:
+  pipeline:
     jobs:
       - build
+
       - test:
-        reqquires:
+        requires:
           - build
+
       -analyze:
         requires:
           - test
